@@ -1,0 +1,19 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environment folders
+.env
+env/
+venv/
+.venv/
+
+# OS-specific
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
