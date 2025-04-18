@@ -26,9 +26,8 @@ COPY requirements.txt .
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
-# Copy all project files
-COPY . . 
-COPY .env .env
+# Copy all project files except what's excluded by .dockerignore
+COPY . .
 
 # Expose Gradio port
 EXPOSE 8080

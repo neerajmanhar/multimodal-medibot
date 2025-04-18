@@ -49,7 +49,7 @@ def record_audio(file_path, timeout=20):
 audio_filepath="patient_voice_test.mp3"
 # record_audio(file_path=audio_filepath)
 
-GROQ_API_KEY=os.environ.get("GROQ_API_KEY")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").strip()
 
 stt_model="whisper-large-v3"
 
