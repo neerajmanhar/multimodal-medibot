@@ -24,3 +24,7 @@ steps:
 
 images:
 - 'asia-south1-docker.pkg.dev/medibot-cicd/medi-bot-repo/medi-bot-app:latest'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  logsBucket: gs://medibot-cicd-logs-neeraj2025
