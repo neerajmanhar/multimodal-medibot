@@ -3,7 +3,9 @@ import base64
 import os
 from groq import Groq
 # load_dotenv()
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").strip()
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").replace("\n", "").replace("\r", "").strip()
+headers = {"Authorization": f"Bearer {GROQ_API_KEY}"}
+
 
 query="Is there something wrong with my face?"
 model="llama-3.2-90b-vision-preview"

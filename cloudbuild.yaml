@@ -19,7 +19,7 @@ steps:
     - '--allow-unauthenticated'
     - '--port'
     - '8080'
-    - '--set-env-vars'
+    - '--set-secret'
     - 'GROQ_API_KEY=${_GROQ_API_KEY}'
 
 images:

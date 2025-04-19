@@ -6,7 +6,8 @@ import time
 import gradio as gr
 from gtts import gTTS
 
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").strip()
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").replace("\n", "").replace("\r", "").strip()
+headers = {"Authorization": f"Bearer {GROQ_API_KEY}"}
 
 from brain_of_the_doctor import encode_image, analyze_image_with_query, analyze_without_image
 from voice_of_the_patient import transcribe_with_groq
