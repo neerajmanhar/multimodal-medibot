@@ -1,5 +1,7 @@
 # 🩺 Multimodal Medical Chatbot
 
+[Live App](https://medi-bot-app-122859879070.asia-south1.run.app/)  
+
 A lightweight multimodal medical assistant chatbot that takes in **audio** and optionally **image inputs** to answer health-related queries using the **Meta LLaMA 4 (Scout 17B Instruct)** model via the **Groq API**. The bot transcribes spoken input using **Whisper**, optionally processes visual symptoms (e.g., acne, rashes, injuries), and generates informative, voice-based responses using **gTTS** — all inside a simple, user-friendly **Gradio** interface.
 
 ---
